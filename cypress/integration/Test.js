@@ -1,5 +1,5 @@
 describe ('My First Test', () => {
-    it('My First test case',()=>{
+    it('Practice test case',()=>{
 
     cy.visit("https://rahulshettyacademy.com/seleniumPractise/#/");
     cy.get('.search-keyword').type('ca');
@@ -7,12 +7,12 @@ describe ('My First Test', () => {
     cy.get('.product:visible').should('have.length',4);
 
     //Alliasing a locator same as const variable
-    cy.get('.products').as('productLocator')
+    cy.get('.products').as('productLocator');
 
     //parent child chaining
     cy.get('@productLocator').find('.product').should('have.length',4);
-    cy.get('@productLocator').find('.product').eq(1).contains('ADD TO CART').click() //ideal way to use by index
-    console.log('test')
+    cy.get('@productLocator').find('.product').eq(1).contains('ADD TO CART').click(); //ideal way to use by index
+    console.log('test');
 
     // Add dynamically base on product name
     cy.get('.products').find('.product').each(($el, index, $list) => {
@@ -24,7 +24,7 @@ describe ('My First Test', () => {
     }
 })
 //assert if text is correctly displayed
-cy.get('.brand').should('have.text','GREENKART')
+cy.get('.brand').should('have.text','GREENKART');
 
 //Print logo text
 cy.get('.brand').then(function(logoElement){
