@@ -1,6 +1,6 @@
 ## Demo Workflow
 
-This demo showcases my automated **Cypress** test script for an e-commerce application:
+This demo showcases my automated **Cypress_JavaScript** test script for an e-commerce application:
 
 **Add products dynamically to the cart**
 
