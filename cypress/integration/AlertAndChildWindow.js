@@ -31,7 +31,7 @@ describe ('Handling Web Controls', () => {
 
 
 
-      
+    //other way 1
     // cy.get('#opentab').invoke('removeAttr','target').click(); // to open in same tab
     // cy.origin('https://www.qaclickacademy.com/',()=>
     // {
