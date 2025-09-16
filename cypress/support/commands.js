@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+//use this if a certain action is being repeated multiple times in different places
+Cypress.Commands.add('submitFormDetails', ()=>{
+    cy.get('#country').type('India')
+    Cypress.config('defaultCommandTimeout',8000) //Set timeout to 8 sec
+    cy.get('.suggestions ul li a').click()
+    cy.get('.btn-success').click()
+
+
+})
