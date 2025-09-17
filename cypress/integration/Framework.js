@@ -15,7 +15,7 @@ describe('End to End E-commerce Test',()=>{
 
   const productName= this.data.productName
 
-  this.homepage.goTo("https://rahulshettyacademy.com/loginpagePractise/")
+  cy.visit(Cypress.env('url')+"/loginpagePractise/")
   const productPage = this.homepage.login(this.data.username,this.data.password)
   productPage.pageValidation()
   productPage.getCartCount().should('have.length', 4)
