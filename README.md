@@ -1,6 +1,8 @@
 ## Demo Workflow
 
 This demo showcases my automated **Cypress(JavaScript)** test script for an e-commerce application:
+Automated basic UI workflows using Cypress with simple tests for login, navigation, and form validation.
+
 
 **Add products dynamically to the cart**
 
