@@ -34,6 +34,11 @@ class ProductPage{
 
     }
 
+    removeProducttoCart(){
+        cy.get(':nth-child(1) > :nth-child(5) > .btn').click()
+  
+    }
+
   
 
 

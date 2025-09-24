@@ -29,7 +29,7 @@ describe('End to End E-commerce Test',()=>{
   {
    expect(sum).to.be.lessThan(200000);
   })
-
+  productPage.removeProducttoCart()
   const Confirmationpage = cartPage.checkOutItems()
   Confirmationpage.submitFormDetails()
   Confirmationpage.getAlertMessage().should('contain.text', 'Success')
