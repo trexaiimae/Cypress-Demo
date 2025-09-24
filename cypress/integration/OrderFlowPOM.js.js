@@ -24,12 +24,9 @@ describe('End to End E-commerce Test',()=>{
   productPage.selectProduct(productName)
   productPage.selectFirstProduct()
   const cartPage= productPage.goToCart()
-
-  cartPage.sumOfProduct().then(function(sum)
-  {
-   expect(sum).to.be.lessThan(200000);
-  })
+  cartPage.verifyCartTotal()
   productPage.removeProducttoCart()
+  cartPage.verifyCartTotal()
   const Confirmationpage = cartPage.checkOutItems()
   Confirmationpage.submitFormDetails()
   Confirmationpage.getAlertMessage().should('contain.text', 'Success')
