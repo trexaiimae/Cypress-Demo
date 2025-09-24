@@ -1,3 +1,5 @@
+// this automation script places an order on an e-commerce website, validates the cart, applies a promo code, and verifies the final order placement message. This does not use Page Object Model (POM) structure.
+
 describe('E-commerce Testing', () => {
     it('Place an order', () => {
         cy.visit('https://rahulshettyacademy.com/seleniumPractise/#/');

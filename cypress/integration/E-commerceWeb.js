@@ -1,3 +1,5 @@
+// This script uses Page Object Model (POM) structure to automate an end-to-end test of an e-commerce website, including login, product selection, cart validation, checkout, and order confirmation.
+
 import HomePage from '../support/pageObjects/HomePage'
 
 describe('End to End E-commerce Test',()=>{
