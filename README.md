@@ -6,7 +6,7 @@ This repository contains two approaches to Cypress test automation for an e-comm
    ➡️ Direct Cypress test with selectors, actions, and assertions written inside the test.
     * Features: Places an order, validates the cart, applies a promo code, and verifies the final thank-you message.
 
-2. With Page Object Model (POM)
+2. With Page Object Model (POM) ( E-commercePOM.js)
   ➡️ Uses POM structure for better maintainability and reusability.
     * Features: Automates login, product selection, cart validation, checkout, and order confirmation.
 
