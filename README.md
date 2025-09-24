@@ -38,8 +38,12 @@ cd Cypress-Demo
 ```bash
 npm install
 ```
+**3. Install dependencies**  
+```bash
+npm install cypress
+```
 
-**3. Verify Cypress installation**  
+**4. Verify Cypress installation**  
 ```bash
 npx cypress -v
 ```
