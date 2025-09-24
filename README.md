@@ -76,5 +76,5 @@ npx cypress run --spec "cypress/e2e/E-commercePOM.js"
 
 ### 📌 Note  
 This project uses a public demo site only as the application under test.
-All test scripts were created and modified by me, with a custom Page Object Model framework and reusable functions to demonstrate Cypress automation practices. 
+The test scripts were implemented and adapted with a Page Object Model framework and reusable functions to demonstrate Cypress automation practices.
 
