@@ -4,7 +4,7 @@ describe('End to End E-commerce Test',()=>{
 
   before (function(){
     //runs once before all tests in the block
-    cy.fixture('example').then(function(data)
+    cy.fixture('data').then(function(data)
 {
   this.data=data
   this.homepage = new HomePage()
