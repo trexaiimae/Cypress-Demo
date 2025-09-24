@@ -33,17 +33,23 @@ This repository contains **two approaches to Cypress test automation** for an e-
 git clone https://github.com/trexaiimae/Cypress-Demo.git
 cd Cypress-Demo
 ```
+**2. Install Node.js [(LTS version recommended]([url](https://nodejs.org/en)))**  
+- Make sure to select **“Add to PATH”** during installation (Windows). 
+```bash
+node -v
+npm -v
+```
 
-**2. Install dependencies**  
+**3. Install dependencies**  
 ```bash
 npm install
 ```
-**3. Install dependencies**  
+**4. Install dependencies**  
 ```bash
 npm install cypress
 ```
 
-**4. Verify Cypress installation**  
+**5. Verify Cypress installation**  
 ```bash
 npx cypress -v
 ```
