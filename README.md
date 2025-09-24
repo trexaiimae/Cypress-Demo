@@ -1,30 +1,31 @@
 ## Demo Workflow
 
-This demo showcases my automated **Cypress(JavaScript)** test script for an e-commerce application:
-Automated basic UI workflows using Cypress with simple tests for login, navigation, and form validation.
+This repository contains two approaches to Cypress test automation for an e-commerce website:
 
+1. Without Page Object Model (POM) ( E-commerce.js)
+   ➡️ Direct Cypress test with selectors, actions, and assertions written inside the test.
+    * Features: Places an order, validates the cart, applies a promo code, and verifies the final thank-you message.
 
-**Add products dynamically to the cart**
+2. With Page Object Model (POM)
+  ➡️ Uses POM structure for better maintainability and reusability.
+    * Features: Automates login, product selection, cart validation, checkout, and order confirmation.
 
-* Search and add multiple items dynamically using Cypress commands
-* Iterate over an array of items and add to cart
+📦 Setup & Installation
 
-**Cart page validations**
+1. Clone this repo
+run: git clone https://github.com/trexaiimae/Cypress-Demo.git
+run: cd Cypress-Demo
 
-* Verify that the correct products were added
-* Calculate and assert **total amount**
-* Validate **discounted total** after applying promo code
+ 2. Install dependencies
+Make sure you have Node.js installed [(LTS version recommended]([url](https://nodejs.org/en))).
+run: npm install
 
-**Checkout process**
+3. Verify Cypress is installed
+run: npx cypress -v
 
-* Select **Philippines** as the country
-* Tick the **Terms and Conditions** checkbox
-* Click the **Place Order** button
+▶️ Running the Tests
 
-**Confirmation page**
+1. Open Cypress Test Runner (GUI)
+run: npx cypress open
 
-* Capture and assert the **Thank You** message displayed after placing the order
-
-**Demo Video**
-
-[Watch the demo video](https://drive.google.com/file/d/1ewd7vEEj7MKtm1SuTbqb5xvtFjS2jUEM/view?t=1)
+2. Select a spec you want to run
