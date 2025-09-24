@@ -5,7 +5,7 @@ This repository contains **two approaches to Cypress test automation** for an e-
 ---
 
 ## 🔹 Without Page Object Model (POM) – `E-commerce.js`  
-➡️ Direct Cypress test with selectors, actions, and assertions written inside the test.  
+➡️ Demonstrates a straightforward Cypress test that covers order placement, cart validation, promo code application, and order confirmation. 
 
 **Features:**  
 - Places an order  
@@ -16,7 +16,7 @@ This repository contains **two approaches to Cypress test automation** for an e-
 ---
 
 ## 🔹 With Page Object Model (POM) – `E-commercePOM.js`  
-➡️ Uses the **POM structure** for better maintainability and reusability.  
+➡️ Demonstrates a structured automation framework using fixtures, reusable methods, and page objects for better maintainability and scalability. 
 
 **Features:**  
 - Automates login  
@@ -73,4 +73,8 @@ npx cypress run --spec "cypress/e2e/E-commerce.js"
 # Run POM demo
 npx cypress run --spec "cypress/e2e/E-commercePOM.js"
 ```
+
+### 📌 Note  
+This project uses a public demo site only as the application under test.
+The test scripts were implemented and adapted with a Page Object Model framework and reusable functions to demonstrate Cypress automation practices.
 
