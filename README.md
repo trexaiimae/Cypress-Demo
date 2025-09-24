@@ -36,7 +36,31 @@ cd Cypress-Demo
 
 **2. Install dependencies**  
 ```bash
-git clone https://github.com/trexaiimae/Cypress-Demo.git
-cd Cypress-Demo
+npm install
+```
 
+**3. Verify Cypress installation**  
+```bash
+npx cypress -v
+```
+
+▶️ Running the Tests
+
+**Option 1: Run via Cypress GUI**  
+```bash
+npx cypress open
+```
+Then select the spec you want to run:
+➡️E-commerce.js → Non-POM demo
+➡️E-commercePOM.js → POM demo
+
+
+**Option 2: Run directly in CLI (headless mode)**  
+```bash
+# Run non-POM demo
+npx cypress run --spec "cypress/e2e/E-commerce.js"
+
+# Run POM demo
+npx cypress run --spec "cypress/e2e/E-commercePOM.js"
+```
 
