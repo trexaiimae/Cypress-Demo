@@ -1,9 +1,9 @@
 import ProductPage from './ProductPage'
 
 class HomePage {
-  goTo(url) {
-    cy.visit(url)
-  }
+  // static goTo() {
+  //   cy.visit('https://the-internet.herokuapp.com/')
+  // }
 
   login(username, password) {
     cy.get('#username').type(username)
