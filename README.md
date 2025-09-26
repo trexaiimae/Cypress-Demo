@@ -78,8 +78,9 @@ npx cypress -v
 npx cypress open
 ```
 Then select the spec you want to run:
-➡️E-commerce.js → Non-POM demo
-➡️E-commercePOM.js → POM demo
+➡️OrderFlowPOM.js → POM demo
+➡️OrderFlowTest.js → Non-POM demo
+➡️APIValidation.js → API demo
 
 
 **Option 2: Run directly in CLI (headless mode)**  
@@ -88,7 +89,7 @@ Then select the spec you want to run:
 npx cypress run --spec "cypress/integration/OrderFlowPOM.js"
 
 # Run POM demo
-npx cypress run --spec "cypress/integration/OrderFlowTEST.js"
+npx cypress run --spec "cypress/integration/OrderFlowTest.js"
 
 # Run API demo
 npx cypress run --spec "cypress/integration/APITesting/APIValidation.js"
