@@ -1,6 +1,9 @@
 # Cypress Demo Automation  
 
-This repository contains **two approaches to Cypress test automation** for an e-commerce website:  
+This repository showcases my Cypress automation skills across multiple testing approaches:
+➡️UI (Direct Locators) – simple end-to-end tests
+➡️UI (Page Object Model) – scalable, maintainable framework design
+➡️API Testing – response validation, schema checks, and negative scenarios 
 
 ---
 
@@ -11,7 +14,7 @@ This repository contains **two approaches to Cypress test automation** for an e-
 - Places an order  
 - Validates the cart  
 - Applies a promo code  
-- Verifies the final thank-you message  
+- Verifies the final thank-you message
 
 ---
 
@@ -22,7 +25,19 @@ This repository contains **two approaches to Cypress test automation** for an e-
 - Automates login  
 - Product selection  
 - Cart validation  
-- Checkout and order confirmation  
+- Checkout and order confirmation
+
+  ## 🔹 API Automation – `APIValidation.js`  
+➡️ Demonstrates Cypress API testing with the Dog CEO API through structured request/response validation for maintainability and accuracy.
+
+**Features:**  
+- Sends a GET request to retrieve all dog breeds
+- Validates status, headers, and response structure
+- Asserts breed properties and sub-breed arrays
+- Verifies breeds with no sub-breeds
+- Negative scenarios with invalid endpoints and non-existent breeds
+
+
 
 ---
 
@@ -68,10 +83,14 @@ Then select the spec you want to run:
 **Option 2: Run directly in CLI (headless mode)**  
 ```bash
 # Run non-POM demo
-npx cypress run --spec "cypress/e2e/E-commerce.js"
+npx cypress run --spec "npx cypress run --spec "cypress/integration/E-commerce.js"
 
 # Run POM demo
-npx cypress run --spec "cypress/e2e/E-commercePOM.js"
+npx cypress run --spec "npx cypress run --spec "cypress/integration/E-commercePOM.js"
+
+# Run API demo
+npx cypress run --spec "npx cypress run --spec "cypress/integration/APITesting/APIValidation.js"
+
 ```
 
 ### 📌 Note  
