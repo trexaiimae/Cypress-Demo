@@ -85,13 +85,13 @@ Then select the spec you want to run:
 **Option 2: Run directly in CLI (headless mode)**  
 ```bash
 # Run non-POM demo
-npx cypress run --spec "npx cypress run --spec "cypress/integration/E-commerce.js"
+npx cypress run --spec "cypress/integration/E-commerce.js"
 
 # Run POM demo
-npx cypress run --spec "npx cypress run --spec "cypress/integration/E-commercePOM.js"
+npx cypress run --spec "cypress/integration/E-commercePOM.js"
 
 # Run API demo
-npx cypress run --spec "npx cypress run --spec "cypress/integration/APITesting/APIValidation.js"
+npx cypress run --spec "cypress/integration/APITesting/APIValidation.js"
 
 ```
 
