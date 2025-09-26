@@ -9,7 +9,7 @@ This repository showcases my Cypress automation skills across multiple testing a
 
 ---
 
-## 🔹 Without Page Object Model (POM) – `E-commerce.js`  
+## 🔹 Without Page Object Model (POM) – `OrderFlowPOM.js`  
 ➡️ Demonstrates a straightforward Cypress test that covers order placement, cart validation, promo code application, and order confirmation. 
 
 **Features:**  
@@ -20,7 +20,7 @@ This repository showcases my Cypress automation skills across multiple testing a
 
 ---
 
-## 🔹 With Page Object Model (POM) – `E-commercePOM.js`  
+## 🔹 With Page Object Model (POM) – `OrderFlowTest.js`  
 ➡️ Demonstrates a structured automation framework using fixtures, reusable methods, and page objects for better maintainability and scalability. 
 
 **Features:**  
@@ -85,10 +85,10 @@ Then select the spec you want to run:
 **Option 2: Run directly in CLI (headless mode)**  
 ```bash
 # Run non-POM demo
-npx cypress run --spec "cypress/integration/E-commerce.js"
+npx cypress run --spec "cypress/integration/OrderFlowPOM.js"
 
 # Run POM demo
-npx cypress run --spec "cypress/integration/E-commercePOM.js"
+npx cypress run --spec "cypress/integration/OrderFlowTEST.js"
 
 # Run API demo
 npx cypress run --spec "cypress/integration/APITesting/APIValidation.js"
