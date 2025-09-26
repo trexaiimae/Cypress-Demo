@@ -1,9 +1,11 @@
 # Cypress Demo Automation  
 
 This repository showcases my Cypress automation skills across multiple testing approaches:
-➡️UI (Direct Locators) – simple end-to-end tests
-➡️UI (Page Object Model) – scalable, maintainable framework design
-➡️API Testing – response validation, schema checks, and negative scenarios 
+
+- ➡️ UI (Direct Locators) – simple end-to-end tests  
+- ➡️ UI (Page Object Model) – scalable, maintainable framework design  
+- ➡️ API Testing – response validation, schema checks, and negative scenarios  
+
 
 ---
 
