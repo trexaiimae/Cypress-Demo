@@ -2,7 +2,7 @@
 
 describe('Dog API Test', function() {
 
-    it('Validate dog breeds list', function() {
+    it('Positive Scenarios', function() {
 
         cy.request('GET', 'https://dog.ceo/api/breeds/list/all').then((response) => {
             
@@ -11,7 +11,7 @@ describe('Dog API Test', function() {
             expect(response.headers['content-type']).to.include('application/json');
             expect(response.body.message).to.be.an('object');
 
-           // To check if these specicific breeds exist in the response array
+            // To check if these specific breeds exist in the response object
             expect(response.body.message).to.have.property('akita');
             expect(response.body.message).to.have.property('bulldog');
             expect(response.body.message).to.have.property('retriever');
@@ -22,10 +22,34 @@ describe('Dog API Test', function() {
 
             // Test Validation for a breed that has no sub-breed
             expect(response.body.message.beagle).to.be.an('array').that.is.empty;
-            
+        });
+    });
 
+    it('Negative Scenarios', function() {
+
+        // Invalid endpoint
+        cy.request({
+            method: 'GET',
+            url: 'https://dog.ceo/api/breeds/list/invalid',
+            failOnStatusCode: false
+        }).then((response) => {
+            expect(response.status).to.eq(404);
+            expect(response.body.status).to.eq('error');
+            expect(response.body.message).to.contain('No route found');
             
         });
+
+        // Non-existing breed
+        cy.request({
+            method: 'GET',
+            url: 'https://dog.ceo/api/breed/dragon/images',
+            failOnStatusCode: false
+        }).then((response) => {
+            expect(response.status).to.eq(404);
+            expect(response.body.status).to.eq('error');
+            expect(response.body.message).to.contain('Breed not found');
+        });
+
 
     });
 
