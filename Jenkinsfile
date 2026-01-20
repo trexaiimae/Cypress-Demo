@@ -28,7 +28,7 @@ pipeline {
                 sh 'xvfb-run -a npx cypress run --headless --project $WORKSPACE'
             }
         }
-//testing
+//testing s
         stage('Generate Mochawesome Report') {
             steps {
                 sh 'npm run report:merge || true'
