@@ -13,6 +13,7 @@ describe('End to End E-commerce Test',()=>{
 })
 })
  
+//it block for the test case
   it('Submit an order',function(){
 
   const productName= this.data.productName
