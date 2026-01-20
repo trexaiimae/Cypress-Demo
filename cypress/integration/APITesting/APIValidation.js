@@ -50,7 +50,6 @@ describe('Dog API Test', function() {
             expect(response.body.message).to.contain('Breed not found');
         });
 
-//remove
     });
 
 });
