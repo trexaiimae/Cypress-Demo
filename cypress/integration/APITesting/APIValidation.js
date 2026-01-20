@@ -27,7 +27,7 @@ describe('Dog API Test', function() {
 
     it('Negative Scenarios', function() {
 
-        // Invalid endpoints API
+        // Invalid endpoints
         cy.request({
             method: 'GET',
             url: 'https://dog.ceo/api/breeds/list/invalid',
