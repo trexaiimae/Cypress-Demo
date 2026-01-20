@@ -39,7 +39,7 @@ describe('Dog API Test', function() {
             
         });
 
-        // Non-existing breed
+        // Non-existing breed request
         cy.request({
             method: 'GET',
             url: 'https://dog.ceo/api/breed/dragon/images',
